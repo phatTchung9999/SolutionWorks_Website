@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+    <div class="container">
+
+        <div class="row">
+
+            <h1 class="text-center text-light mt-5 font_1">
+                Free websites,<br>
+                Real impact.
+            </h1>
+
+
+        </div>
+
+        <div class="row mt-5">
+
+                <form action=""  method="POST">
+                    {% csrf_token %}
+                    <div class="d-flex gap-2  justify-content-center">
+
+                        <input class="form-control" type="email" id="email" name="email" placeholder="Enter your email" style="max-width: 300px; width: 100%;">
+                        <button type= "submit" class = "btn btn-dark"> Explore </button>
+
+                    </div>
+                </form>
+
+        </div>
+
+    </div>
+{% endblock %}

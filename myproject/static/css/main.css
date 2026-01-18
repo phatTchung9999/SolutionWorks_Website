@@ -1,0 +1,19 @@
+.hero {
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.logo {
+  height: 60px;
+  width: 100px;
+}
+
+.font_1 {
+  font-family:'Segoe UI';
+}
+
+.font_2 {
+  font-family:'Lucida Sans Unicode';
+}
