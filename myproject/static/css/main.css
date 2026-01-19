@@ -17,3 +17,59 @@
 .font_2 {
   font-family:'Lucida Sans Unicode';
 }
+
+.element_1 {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  background-color: aliceblue;
+  animation: spin 2.8s forwards ;
+}
+
+@keyframes spin {
+  0% {
+
+  }
+  50% {
+    scale:2;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-radius: 10px;
+  }
+  
+}
+
+.intro {
+  position: fixed;
+  inset: 0;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  animation: hideIntro 0.5s ease forwards;
+  animation-delay: 3.5s;
+}
+
+@keyframes hideIntro {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.hidden_page {
+  opacity: 0;
+  animation: showPage 0.5s ease forwards;
+  animation-delay: 3.5s;
+}
+
+@keyframes showPage {
+  to {
+    opacity: 1;
+  }
+}
