@@ -10,7 +10,7 @@ SolutionWorks is founded and developed by **Phat Chung**
 
 ## 🛠️ How It Works
 
-1. Local businesses choose a website template that matches their business type.
+1. Local businesses select a website template that fits their business type through the portfolio showcased on the homepage.
 2. Templates include features such as appointment booking, service display, and contact information.
 3. I help configure and deploy the website for the business at no cost.
 4. The business receives a functional and professional website they can use immediately.
