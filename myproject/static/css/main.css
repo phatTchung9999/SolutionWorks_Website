@@ -18,6 +18,11 @@
   font-family:'Lucida Sans Unicode';
 }
 
+.text_justify {
+  text-align: justify;
+  text-align-last: left;
+}
+
 .element_1 {
   height: 200px;
   width: 200px;
@@ -25,7 +30,7 @@
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  background-color: aliceblue;
+  background-color: white;
   animation: spin 2.8s forwards ;
 }
 
