@@ -19,26 +19,6 @@
   min-height: 5vh;
 }
 
-.mint-box{
-  position: relative;
-  min-height: 500px;
-  background-color: #DFF3E8;
-}
-
-.white-box{
-  position: absolute;
-  top: 60%;
-  left: 60%;
-  transform: translate(-50%, -50%);
-  min-height: 250px;
-  background-color: white;
-  z-index: 10;
-
-  border-radius: 16px;
-  box-shadow: 0 12px 32px rgba(0,0,0,0.08);
-}
-
-
 
 .logo {
   height: 60px;
