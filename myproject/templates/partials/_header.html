@@ -1,53 +1,54 @@
 {% load static %}
 
+<header class="sticky-top bg-white border-bottom shadow-lg">
+    <div class="container">
 
-<div class="container">
+        <div class="row align-items-center">
 
-    <div class="row align-items-center">
-
-        <div class="col-2 text-start">
-            <img src="{% static 'images/logo.jpg' %}" alt="Logo" class="logo">
-        </div>
-
-        <div class="col-9">
-
-            <div class=" d-none d-lg-block">
-                <a href="{% url 'home' %}" class="mx-3 text-secondary-emphasis text-decoration-none ">Home</a>
-                <a href="{% url 'about' %}" class="mx-3 text-secondary-emphasis text-decoration-none">About</a>
-                <a href="{% url 'portfolio' %}" class="mx-3 text-secondary-emphasis text-decoration-none">Portfolio</a>
-                <a href="{% url 'donate' %}" class="mx-3 text-secondary-emphasis text-decoration-none">Donate</a>
-
+            <div class="col-2 text-start">
+                <img src="{% static 'images/logo.jpg' %}" alt="Logo" class="logo">
             </div>
 
-            <div class=" d-block d-lg-none">
-                <div class="dropdown text-end">
-                    <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        More
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{% url 'home' %}" class="mx-3 text-secondary-emphasis text-decoration-none">Home</a></li>
-                        <li><a class="dropdown-item" href="{% url 'about' %}" class="mx-3 text-secondary-emphasis text-decoration-none">About</a></li>
-                        <li><a class="dropdown-item" href="{% url 'portfolio' %}" class="mx-3 text-secondary-emphasis text-decoration-none">Portfolio</a></li>
-                        <li><a class="dropdown-item" href="{% url 'donate' %}" class="mx-3 text-secondary-emphasis text-decoration-none">Donate</a></li>
-                    </ul>
+            <div class="col-9">
+
+                <div class=" d-none d-lg-block">
+                    <a href="{% url 'home' %}" class="mx-3 text-secondary-emphasis text-decoration-none ">Home</a>
+                    <a href="{% url 'about' %}" class="mx-3 text-secondary-emphasis text-decoration-none">About</a>
+                    <a href="{% url 'portfolio' %}" class="mx-3 text-secondary-emphasis text-decoration-none">Portfolio</a>
+                    <a href="{% url 'donate' %}" class="mx-3 text-secondary-emphasis text-decoration-none">Donate</a>
+
+                </div>
+
+                <div class=" d-block d-lg-none">
+                    <div class="dropdown text-end">
+                        <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="{% url 'home' %}" class="mx-3 text-secondary-emphasis text-decoration-none">Home</a></li>
+                            <li><a class="dropdown-item" href="{% url 'about' %}" class="mx-3 text-secondary-emphasis text-decoration-none">About</a></li>
+                            <li><a class="dropdown-item" href="{% url 'portfolio' %}" class="mx-3 text-secondary-emphasis text-decoration-none">Portfolio</a></li>
+                            <li><a class="dropdown-item" href="{% url 'donate' %}" class="mx-3 text-secondary-emphasis text-decoration-none">Donate</a></li>
+                        </ul>
+                    </div>
+
                 </div>
 
             </div>
 
-        </div>
+            <div class="col-1">
+                <div class="d-none d-lg-block">
 
-        <div class="col-1">
-            <div class="d-none d-lg-block">
-
-                <div class="dropdown">
-                    <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                    <div class="dropdown">
+                        <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                    </div>
+                    
                 </div>
-                
+
             </div>
 
-        </div>
 
+        </div>
 
     </div>
-
-</div>
+</header>
