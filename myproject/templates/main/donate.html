@@ -23,7 +23,7 @@
                                 <form action="" method="POST">
                                     {% csrf_token %}
                                     <div class="row d-flex align-items-center justify-content-center">
-                                        <div class="col-10" style="min-height: 450px;">
+                                        <div class="col-10" style="min-height: 420px;">
                                             <div class="d-flex m-4 justify-content-center ">
                                                 <div class="btn-group" role="group" aria-label="Radio toggle button group">
                                                     <input type="radio" class="btn-check" name="billing_cycle" id="give-once" autocomplete="off" checked>
@@ -90,9 +90,10 @@
     <section class="d-block d-lg-none" style="min-height: 100vh;" >
         <div class="container">
 
-            <div class="row">
+            <div class="row d-flex align-items-center justify-content-center" style="min-height: 100vh;">
 
-                <div class="col-12 col-lg-6 offset-lg-6 d-flex align-items-center justify-content-center" style="min-height: 100vh;">
+                <div class="col-12">
+
                     <div class="card bg-light shadow-lg border-0" style="height: 60vh; width: 500px;">
 
                         <div class="row d-flex justify-content-center">
@@ -106,46 +107,46 @@
                                 <form action="" method="POST">
                                     {% csrf_token %}
                                     <div class="row d-flex align-items-center justify-content-center">
-                                        <div class="col-10" style="min-height: 450px;">
+                                        <div class="col-10" style="min-height: 420px;">
                                             <div class="d-flex m-4 justify-content-center ">
                                                 <div class="btn-group" role="group" aria-label="Radio toggle button group">
-                                                    <input type="radio" class="btn-check" name="billing_cycle" id="give-once" autocomplete="off" checked>
-                                                    <label class="btn btn-outline-dark" for="give-once">GIVE ONCE</label>
-                                                    <input type="radio" class="btn-check" name="billing_cycle" id="monthly" autocomplete="off">
-                                                    <label class="btn btn-outline-dark" for="monthly">MONTHLY</label>
+                                                    <input type="radio" class="btn-check" name="billing_cycle" id="give_once_sm" autocomplete="off" checked>
+                                                    <label class="btn btn-outline-dark" for="give_once_sm">GIVE ONCE</label>
+                                                    <input type="radio" class="btn-check" name="billing_cycle" id="monthly_sm" autocomplete="off">
+                                                    <label class="btn btn-outline-dark" for="monthly_sm">MONTHLY</label>
                                                 </div>
                                             </div>
                                             <div class="d-flex m-4 justify-content-center ">
                                                 <div class="btn-group" role="group" aria-label="Radio toggle button group">
-                                                    <input type="radio" class="btn-check" name="amount" id="amount_20" value="20" autocomplete="off">
-                                                    <label class="btn btn-outline-dark" for="amount_20">$20</label>
-                                                    <input type="radio" class="btn-check" name="amount" id="amount_40" value="40" autocomplete="off">
-                                                    <label class="btn btn-outline-dark" for="amount_40">$40</label>
-                                                    <input type="radio" class="btn-check" name="amount" id="amount_100" value="100" autocomplete="off">
-                                                    <label class="btn btn-outline-dark" for="amount_100">$100</label>
-                                                    <input type="radio" class="btn-check" name="amount" id="amount_120" value="120" autocomplete="off">
-                                                    <label class="btn btn-outline-dark" for="amount_120">$120</label>
-                                                    <input type="radio" class="btn-check" name="amount" id="amount_140" value="140" autocomplete="off">
-                                                    <label class="btn btn-outline-dark" for="amount_140">$140</label>
-                                                    <input type="radio" class="btn-check" name="amount" id="amount_200" value="200" autocomplete="off">
-                                                    <label class="btn btn-outline-dark" for="amount_200">$200</label>
-                                                    <input type="radio" class="btn-check" name="amount" id="other" value="other" autocomplete="off" checked>
-                                                    <label class="btn btn-outline-dark" for="other">Other</label>
+                                                    <input type="radio" class="btn-check" name="amount" id="amount_20_sm" value="20" autocomplete="off">
+                                                    <label class="btn btn-outline-dark" for="amount_20_sm">$20</label>
+                                                    <input type="radio" class="btn-check" name="amount" id="amount_40_sm" value="40" autocomplete="off">
+                                                    <label class="btn btn-outline-dark" for="amount_40_sm">$40</label>
+                                                    <input type="radio" class="btn-check" name="amount" id="amount_100_sm" value="100" autocomplete="off">
+                                                    <label class="btn btn-outline-dark" for="amount_100_sm">$100</label>
+                                                    <input type="radio" class="btn-check" name="amount" id="amount_120_sm" value="120" autocomplete="off">
+                                                    <label class="btn btn-outline-dark" for="amount_120_sm">$120</label>
+                                                    <input type="radio" class="btn-check" name="amount" id="amount_140_sm" value="140" autocomplete="off">
+                                                    <label class="btn btn-outline-dark" for="amount_140_sm">$140</label>
+                                                    <input type="radio" class="btn-check" name="amount" id="amount_200_sm" value="200" autocomplete="off">
+                                                    <label class="btn btn-outline-dark" for="amount_200_sm">$200</label>
+                                                    <input type="radio" class="btn-check" name="amount" id="other_sm" value="other" autocomplete="off" checked>
+                                                    <label class="btn btn-outline-dark" for="other_sm">Other</label>
                                                 </div>
 
                                             </div>
 
-                                            <div class="d-none d-flex m-4 justify-content-center" id="otherAmountWrapper">
+                                            <div class="d-none d-flex m-4 justify-content-center" id="otherAmountWrapper_sm">
                                                 <div class="input-group">
                                                     <span class="input-group-text">$</span>
-                                                    <input type="text" class="form-control" name="other_amount" id="other_amount" aria-label="Amount (to the nearest dollar)">
+                                                    <input type="text" class="form-control" name="other_amount" id="other_amount_sm" aria-label="Amount (to the nearest dollar)">
                                                     <span class="input-group-text">USD</span>
                                                 </div>
                                             </div>
                                             <div class="m-4 justify-content-start">
 
-                                                <input type="checkbox" name="checked" id="checked" required>
-                                                <label for="checked">I have read the </label>
+                                                <input type="checkbox" name="checked" id="checked_sm" required>
+                                                <label for="checked_sm">I have read the </label>
                                                 <a href="">founder's message.<a>
                                             </div>
                                         </div>
@@ -163,8 +164,8 @@
                         </div>
 
                     </div>
+                
                 </div>
-
             </div>
 
 
