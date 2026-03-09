@@ -11,8 +11,29 @@
     </head>
     <body>
         <section class="hero">
-            <div class="card" style="height: 500px; width: 500px; border-radius: 5%;">
-                 
+            <div class="card d-flex align-items-center justify-content-center shadow-lg" style="height: 500px; width: 500px; border-radius: 5%;">
+                <div class="card" style="background-color: whitesmoke; height: 480px; width: 480px; border-radius: 5%; border: dashed 1px gray;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 d-flex align-items-center justify-content-center" style="height: 80px;">
+                                <h4>Upload your images</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div id="drop-box" class="col-12 text-center" style="height: 280px;">
+                                <img src="{% static 'images/image.png' %}" style="width: 150px; height: 150px;">
+                                <p>Drag and Drop your files here</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 text-center" style="height: 120px;">
+                                <p>-----------   Or   ------------</p>
+                                <button class="text-light btn btn-dark">Upload to extract</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </body>
