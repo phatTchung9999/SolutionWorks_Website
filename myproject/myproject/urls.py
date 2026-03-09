@@ -20,7 +20,8 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('main.urls'))
+    path('', include('main.urls')),
+    path('extractor/', include('imageExtractor.urls')),
 ]
 
 handler404 = "myproject.views.handler404"
