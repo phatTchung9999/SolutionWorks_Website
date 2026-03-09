@@ -9,15 +9,7 @@ def home(request):
         if email:
             send_mail(
                 subject="Welcome to SolutionWorks 🎉",
-                message=
-                '''
-                Hi there,
-
-                Thanks for being interested in working with us! We'll contact you soon.
-                
-                Best,
-                .SolutionWorks team
-                ''',
+                message="Hi there,\n\nThanks for being interested in working with us! We'll contact you soon.\n\n Best,\n.SolutionWorks team",
                 from_email=settings.EMAIL_HOST_USER,
                 recipient_list=[email],
                 fail_silently=False,
