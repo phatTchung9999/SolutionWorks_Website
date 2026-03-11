@@ -11,7 +11,8 @@
     </head>
     <body>
         <section class="hero">
-            <div class="card d-flex align-items-center justify-content-center shadow-lg" style="height: 500px; width: 500px; border-radius: 5%;">
+            <!-- start drag-drop box -->
+            <div id="first" class="card d-flex align-items-center justify-content-center shadow-lg" style="height: 500px; width: 500px; border-radius: 5%;">
                 <div class="card" style="background-color: whitesmoke; height: 480px; width: 480px; border-radius: 5%; border: dashed 1px gray;">
                     <div class="container">
                         <div class="row">
@@ -19,22 +20,56 @@
                                 <h4>Upload your images</h4>
                             </div>
                         </div>
+                        <!-- start -->
+                         <!-- Make this part as the input box to take pictures -->
                         <div class="row">
-                            <div id="drop-box" class="col-12 text-center" style="height: 280px;">
-                                <img src="{% static 'images/image.png' %}" style="width: 150px; height: 150px;">
-                                <p>Drag and Drop your files here</p>
+                            <div id="drop-box" class="col-12 text-center" style="height: 280px; cursor: pointer;">
+                                <img id="image-preview" src="{% static 'images/image.png' %}" style="width: 150px; height: 150px;">
+                                <p id="input-text">Drag and Drop your files here</p>
+                                <input type="file" id="file-input" accept="image/*" hidden>
                             </div>
                         </div>
+                        <!-- end  -->
+
+                        <!-- start -->
+                         <!-- Make the button triggering the document browser -->
                         <div class="row">
-                            <div class="col-12 text-center" style="height: 120px;">
+                            <div id="upload-part" class="col-12 text-center" style="height: 120px;">
                                 <p>-----------   Or   ------------</p>
-                                <button class="text-light btn btn-dark">Upload to extract</button>
+                                <button class="text-light btn btn-dark" id="upload-btn">Upload to extract</button>
+                                
+                            </div>
+
+                            <div id="extract-part" class="col-12 text-center" style="height: 120px; display: none;">
+                                <div class="d-flex justify-content-center gap-2">
+                                    <i>Is your picture good to be extracted?</i>
+                                    <p onclick="removeFile()" style="cursor: pointer; color: blue;">No</p>
+                                </div>
+                                <button class="text-light btn btn-dark" id="extract-btn">Extract</button>
                                 
                             </div>
                         </div>
+                        <!-- end -->
                     </div>
                 </div>
             </div>
+            <!-- end drag-drop box -->
+
+            <div id="second" class="row mt-3" style="display: none;">
+
+                <div class="col-12">
+                <div onclick="removeFile()">Back</div>
+                    <h5>Extracted Text</h5>
+                    <div id="result-box" class="p-3 border rounded bg-light" style="min-height: 120px;">
+                        No text yet
+                    </div>
+                </div>
+            </div>
+
+
+
         </section>
+        <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+        <script src="{% static 'js/extractor_ui.js' %}"></script>    
     </body>
 </html>

@@ -17,6 +17,20 @@ def home(request):
 
     return render(request, 'main/home.html')
 
+def home_1(request):
+    if request.method == "POST":
+        email = request.POST.get('email')
+        if email:
+            send_mail(
+                subject="Welcome to SolutionWorks 🎉",
+                message="Hi there,\n\nThanks for being interested in working with us! We'll contact you soon.\n\n Best,\n.SolutionWorks team",
+                from_email=settings.EMAIL_HOST_USER,
+                recipient_list=[email],
+                fail_silently=False,
+            )
+
+    return render(request, 'main/home_1.html')
+
 def about(request):
     return render(request, 'main/about.html')
 
