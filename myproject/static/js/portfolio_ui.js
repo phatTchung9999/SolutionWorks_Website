@@ -1,7 +1,11 @@
 const templateBox = document.getElementById('template-box');
 const templateDrop = document.getElementById('template-drop');
+
 const toolBox = document.getElementById('tool-box');
-const toolDrop = document.getElementById('tool-drop')
+const toolDrop = document.getElementById('tool-drop');
+
+const imageAnalysist = document.getElementById('image-analysist');
+const imageAnalysistBtn = document.getElementById('image-analysist-button');
 
 
 
@@ -26,5 +30,9 @@ toolBox.onmouseleave = function() {
 
 toolBox.onclick = function() {
     toolDrop.style.display = 
-        toolDrop.style.display === 'none'? 'grid': 'none';
+        toolDrop.style.display === 'none'? 'flex': 'none';
+}
+
+imageAnalysist.onclick = () => {
+    imageAnalysistBtn.click();
 }
