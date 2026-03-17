@@ -7,40 +7,41 @@
     <section  class="section_background_1 d-flex justify-content-center align-items-center">
 
             <div class="text-center">
-                <h2 style="color: #eef6f0;"><em>The perfect "Human-Made Websites" <br> for free! </em></h2> 
+                <h1 style="color: #eef6f0;"><em>The perfect "Human-Made Websites" <br> for free! </em></h1> 
 
             </div>
 
     </section>
 
     <section class="m-5">
-    <div class="container">
-        <div class="row d-flex">
-            <div class="col-12 col-lg-8" >
-                <br>
-                <h2 class="text-start">About Us</h2>
-                <em class="text_justify" style="color: rgb(58, 58, 249)">
-                    .SolutionWorks is a non-profit web project that to help small local businesses run their own websites for free.**<br>
-                </em>
-                <br>
-                <p class="text-start">
-                    The goal of .SolutionWorks is to support local communities by providing simple, ready-to-use website templates for small businesses such as barbershops, nail salons, and restaurants. These templates will include practical features like appointment booking, basic business information, and service listings.
-                </p>
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-12 col-lg-8" >
+                    <br>
+                    <h2 class="text-start">What is .SolutionWorks?</h2>
+                    <em class="text_justify" style="color: rgb(58, 58, 249)">
+                        .SolutionWorks is a non-profit web project that to help small local businesses run their own websites for free.**<br>
+                    </em>
+                    <br>
+                    <p class="text-start fs-5">
+                        The goal of .SolutionWorks is to support local communities by providing simple, ready-to-use website templates for small businesses such as barbershops, nail salons, and restaurants. These templates will include practical features like appointment booking, basic business information, and service listings.
+                    </p>
 
-            </div>
-            <div class="col-12 col-lg-4">
-                <br><br><br>
-                <img src="{% static 'images/webpage_graphic.png' %}" class="img-fluid" alt="webpage_graphic" style="border-radius: 10px;">
-            </div> 
-        </div>   
-    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <br><br><br>
+                    <img src="{% static 'images/webpage_graphic.png' %}" class="img-fluid" alt="webpage_graphic" style="border-radius: 10px;">
+                </div> 
+            </div>   
+        </div>
+
     </section>
 
     <section class="m-5">
         <br><br>
         <div class="container">
             <div class="row align-items-center justify-content-center" >
-                <div class="col-10 border" style="min-height: 150px; background-color: #DFF3E8;">
+                <div class="col-10 glass-card" style="min-height: 150px;">
                     <br>
                     <h5 class="text-center"><em>Our Story</em></h5>
                     <p class="text-center">
@@ -51,110 +52,121 @@
                 </div>
             </div>
         </div>
+        <br>
 
     </section>
 
     <section class="m-5">
-        <br><br>
         <div class="container">
-
             <div class="row mb-4">
-                <h3>Why Choose Us?</h3>
+                <h2>Why Choose Us?</h2>
             </div>
 
-            <div class="row g-1">
-                <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center">
-                    <div class="card shadow-lg border-0 hero d-flex align-items-center justify-content-center m-2" style="min-height: 500px; width: 700px;"> 
-                        <div class="text-center">
-                            <h2 style="color: #eef6f0;"><em>Because starting a business is hard <br> Your website shouldn’t be.</em></h2> 
+
+            <div class="swiper mySwiper why-swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide card-slide free-card">
+                        <div class="icon-box">
+                            <i class="bi bi-cash-stack fs-1"></i>
+                        </div>
+                        <div class="overlay">
+                            <h5><em><b>FREE</b></em></h5>
+                            <p><i>We charge you zero fee.<br>Full-service.</i></p>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <div class="row d-flex g-2 justify-content-center align-items-center mb-2">
-                        <div class="col-auto">
-                            <div class="card text-center" style="height: 250px; width: 250px; background-color: #DFF3E8;">
-                                <i class="bi bi-cash-stack fs-1" ></i>
-                                <em><b>FREE</b></em>
-                                <div class="card-text">
-                                    <br>
-                                    <p><i> We charge you zero fee <br> Full-Service</i></p>
-                                </div>
-                            </div>
+
+                    <div class="swiper-slide card-slide timely-card">
+                        <div class="icon-box">
+                            <i class="bi bi-alarm fs-1"></i>
                         </div>
-                        <div class="col-auto">
-                            <div class="card text-center" style="height: 250px; width: 250px;">
-                                <i class="bi bi-alarm fs-1"></i>
-                                <em><b>TIMELY</b></em>
-                                <br>
-                                <p><i> Ready-To-Use Templates<br> Deploy quickly</i></p>
-                            </div>
+                        <div class="overlay">
+                            <h5><em><b>TIMELY</b></em></h5>
+                            <p><i>Ready-to-use templates.<br>Deploy quickly.</i></p>
                         </div>
                     </div>
-                    <div class="row d-flex g-2 justify-content-center align-items-center mb-2">
-                        <div class="col-auto">
-                            <div class="card text-center" style="height: 250px; width: 250px;">
-                                <i class="bi bi-lightning fs-1"></i>
-                                <em><b>QUALITY</b></em>
-                                <br>
-                                <p><i> Free doen not mean cheap</i></p>
-                            </div>
+
+                    <div class="swiper-slide card-slide quality-card">
+                        <div class="icon-box">
+                            <i class="bi bi-lightning fs-1"></i>
                         </div>
-                        <div class="col-auto">
-                            <div class="card text-center" style="height: 250px; width: 250px; background-color: #DFF3E8;">
-                                <i class="bi bi-telephone fs-1"></i>
-                                <em><b>ACTIVELY SUPPORT</b></em>
-                                <br>
-                                <p><i> Question? Update? We are here<br> Support that actually responds</i></p>
-                            </div>
+                        <div class="overlay">
+                            <h5><em><b>QUALITY</b></em></h5>
+                            <p><i>Free does not mean cheap.</i></p>
                         </div>
                     </div>
+
+                    <div class="swiper-slide card-slide support-card">
+                        <div class="icon-box">
+                            <i class="bi bi-telephone fs-1"></i>
+                        </div>
+                        <div class="overlay">
+                            <h5><em><b>ACTIVE SUPPORT</b></em></h5>
+                            <p><i>Questions? Updates? We are here.<br>Support that actually responds.</i></p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+            <br>
+            <div class="d-flex justify-content-end">
+                <button class="btn btn-outline-dark btn-lg" id="explore-button">Explore <i class="bi bi-arrow-right"></i></button>
+            </div>
+
+
         </div>
-
     </section>
 
     <section class="m-5">
 
         <div class="container">
             <br><br>
-            <div class="row">
-                <h3>Our Values</h3>
-            </div>
-
+            <hr>
             <div class="row d-flex">
+                <div class="col-12 col-lg-4"> 
+                    <h2><br>Our Values<i class="bi bi-chevron-right"></i></h2>
 
-                <div class="col-12 col-lg-4" style="text-align: justify; text-align-last: left;">
-                    <br>
-                    <h6>Accessibility</h6>
-                    <p>Going online is the only way to reach people all over the world. We help small businesses build an online presence so everyone has a chance to be seen.</p>
-                    <h6>Simplicity</h6>
-                    <p>Good websites do not need to be complicated. We focus on clean, clear, and useful designs.</p>
                 </div>
-
-                <div class="col-12 col-lg-4" style="text-align: justify; text-align-last: left;">
+                <div class="col-12 col-lg-4 text-start">
                     <br>
-                    <h6>Human-Centered Work</h6>
-                    <p>We believe real people understand real needs. Our websites are made with care, not mass-produced.</p>
+                    <h3>Accessibility</h3>
+                    <p class="fs-5">Going online is the only way to reach people all over the world. We help small businesses build an online presence so everyone has a chance to be seen.</p>
+                </div>
+                <div class="col-12 col-lg-4 text-start">
                     <br>
-                    <h6>Community First</h6>
-                    <p>We support local businesses because strong communities build better futures.</p>
+                    <h3>Simplicity</h3>
+                    <p class="fs-5">Good websites do not need to be complicated. We focus on clean, clear, and useful designs.</p>
                 </div>
-
-                <div class="col-12 col-lg-4" style="text-align: justify; text-align-last: left;">
-                    <img src="{% static 'images/trophy.png' %}" class="img-fluid" alt="Trophy">
-                </div>
-
             </div>
+            <div class="row d-flex">
+                <div class="col-12 col-lg-4"> 
+                    <h2></h2>
+                </div>
+                <div class="col-12 col-lg-4 text-start">
+                    <br>
+                    <h3>Human-Centered Work</h3>
+                    <p class="fs-5">We believe real people understand real needs. Our websites are made with care, not mass-produced.</p>
+                </div>
+                <div class="col-12 col-lg-4 text-start">
+                    <br>
+                    <h3>Community First</h3>
+                     <p class="fs-5">We support local businesses because strong communities build better futures.</p>
+                </div>
+            <div>
+            <hr>
+
 
         </div>
 
     </section>
 
     <section class="mb-5">
-        <div claas="container">
-                <div class="row d-flex align-items-center justify-content-center">
+        <div class="container">
+            <div class="row mb-5">
+                <h2>Our Team<i class="bi bi-chevron-right"></i></h2>
+            </div>
+            <div><div>
+            <div class="row d-flex align-items-center justify-content-center">
                         <div class="col-12 border hero" style=" border-radius:10px; min-height: fit-content; width: auto;">
                             <div class="row">
                                 <div class="text-center">
@@ -185,7 +197,11 @@
                             </div>
                         </div>
 
-                </div>
+            </div>
         </div>
     </section>
+
+{% endblock %}
+{% block scripts %}
+<script src="{% static 'js/slider.js' %}"></script>
 {% endblock %}
