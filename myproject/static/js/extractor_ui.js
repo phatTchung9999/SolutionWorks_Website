@@ -58,6 +58,7 @@ const resultBox = document.getElementById('result-box');
 
                 currentFile = file;
                 showPreview(file);
+                document.getElementById('upload-string').classList.replace('center', 'd-none');
                 document.getElementById('upload-part').style.display = 'none';
                 document.getElementById('extract-part').style.display = 'block';
             }
@@ -69,6 +70,12 @@ const resultBox = document.getElementById('result-box');
                 reader.onload = function(e) {
                     previewImage.src = e.target.result;
                     inputText.textContent = file.name;
+                    previewImage.onload = function() {
+                        previewImage.style.maxWidth = "400px";
+                        previewImage.style.width = "100%";
+                        previewImage.style.height = "auto";
+                        previewImage.style.objectFit = "contain";
+                    };
                 }
 
                 reader.readAsDataURL(file);
@@ -77,9 +84,20 @@ const resultBox = document.getElementById('result-box');
             function removeFile() {
                 fileInput.value = '';
                 currentFile = null;
+
+                previewImage.onload = null;
                 previewImage.src = '/static/images/image.png';
-                inputText.textContent = "Drag and Drop your files here";
+                previewImage.style.width = '';
+                previewImage.style.maxWidth = "150px";
+                previewImage.style.height = 'auto';
+                previewImage.style.objectFit = '';
+
+                inputText.innerHTML = 
+                `<p id='input-text'><strong>Drag and Drop your files here</strong> <br>
+                <i style='font-size: small;'>Support JPEG, PNG formats. Max file size 10MB.</i>
+                </p>`;
                 resultBox.textContent = "No text yet";
+                document.getElementById('upload-string').classList.replace('d-none', 'center');
                 document.getElementById('upload-part').style.display = 'block';
                 document.getElementById('extract-part').style.display = 'none';
                 first.classList.remove('d-none');
@@ -106,4 +124,8 @@ const resultBox = document.getElementById('result-box');
                     console.error(error);
                     resultBox.textContent = "Error extracting text.";
                 });
+            }
+
+            function backToPortfolio() {
+                window.location.href = '/portfolio/'
             }

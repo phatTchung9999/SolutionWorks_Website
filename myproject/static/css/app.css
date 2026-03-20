@@ -1,12 +1,8 @@
 .hero {
     background-image: url("../images/background.jpg");
     background-size: cover;
-    background-attachment: fixed;
     background-position: center;
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .center {
@@ -14,3 +10,15 @@
     align-items: center;
     justify-content: center;
 }
+
+
+.card.responsive-box {
+    min-height: 60vh;
+}
+
+@media (min-width: 1200px) {
+    .card.responsive-box {
+        min-height: 80vh;
+    }
+}
+
