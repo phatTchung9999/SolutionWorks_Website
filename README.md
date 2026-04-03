@@ -8,7 +8,10 @@ Through SolutionWorks, local business owners can choose a template that fits the
 
 SolutionWorks is founded and developed by **Phat Chung**
 
-## 🛠️ How It Works
+## Status
+In Progress
+
+## How It Works
 
 1. Local businesses select a website template that fits their business type through the portfolio showcased on the homepage.
 2. Templates include features such as appointment booking, service display, and contact information.
@@ -16,7 +19,7 @@ SolutionWorks is founded and developed by **Phat Chung**
 4. The business receives a functional and professional website they can use immediately.
 5. I remain available to support the business whenever they need help.
 
-## 🏪 Supported Business Types (Planned)
+## Supported Business Types (Planned)
 
 - Barbershops (appointment booking)
 - Nail salons (service and booking pages)
